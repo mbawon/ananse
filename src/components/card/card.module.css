@@ -1,0 +1,38 @@
+.card{
+    height: 120px;
+    border-radius: 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+@media (max-width: 767px) {
+
+    .card{
+        flex-grow: 1;
+        margin-bottom: 15px;
+    }
+    
+    @-webkit-keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+      
+      @keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

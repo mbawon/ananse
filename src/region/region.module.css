@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+    .area{
+        display: none;
+    }
+
+    @-webkit-keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+      
+      @keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

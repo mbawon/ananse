@@ -1,0 +1,107 @@
+.dashboard {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.card_body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.card_link {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.card_link:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.card_link:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.card_link:focus-visible {
+    box-shadow: none;
+}
+.statistics_mobile{
+    display: none;
+}
+@media (max-width: 767px) {
+    .statistics{
+        display: none;
+    }
+    .statistics_mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .showDetails{
+        display: none;
+    }
+
+    @-webkit-keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+      
+      @keyframes animateleft {
+        from {
+          left: -60%;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
